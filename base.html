@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Add a logo to the Browser Tab -->
+    <!-- for IE -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="/RPClogo_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/RPClogo_32x32.png" sizes="32x32">
+
+    <link href="https://fonts.googleapis.com/css?family=Kreon:300,400,700|Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <meta charset="utf-8">
+    <title>RPC 2016 &mdash; Ghent University</title>
+    <meta name="description" content="RPC2016 conference at Ghent University's website">
+    <meta name="keywords" content="RPC,RPC2016">
+    <meta name="author" content="Antoine Pingault">
+
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, min-zoom=100%">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="/static/style.css"/>
+
+    <script>
+        $(document).ready(function () {
+            var lastScrollTop = 0;
+            $(window).scroll(function () {
+                var scrollTop = $(this).scrollTop();
+                if (scrollTop > lastScrollTop) {
+                    //Hide navBar when user scroll down (remove .navBar-fixed class)
+                    $('.navBar-wrapper').removeClass('navBar-fixed', 1000);
+                } else {
+                    //Show navBar when user scroll up (add .navBar-fixed class)
+                    $('.navBar-wrapper').addClass('navBar-fixed', 1000);
+                }
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+</head>
+
+
+<header id="main-header" role="banner">
+    <a href="/" title="Home">
+        <div class="container">
+            <div id="logo">
+                <!--<img src="static/RPClogo_withRPC.png" alt="RPC2016_Logo" />-->
+                <!--<img src="static/RPC.png" alt="RPC2016_Logo" />-->
+                <!--<img src="static/images/RPC_01.png" alt="RPC2016_Logo" />-->
+                <img src="static/RPClogo_4_nobkg.png" alt="RPC2016_Logo"/>
+            </div>
+            <div id="sitetitle">
+                <h1>XIII Workshop on Resistive Plate Chambers and Related Detectors</h1>
+            </div>
+
+            <h2>GHENT UNIVERSITY, BELGIUM / FEB 22 - 26, 2016</h2>
+        </div>
+    </a>
+</header>
+
+
+<div class="navBar-wrapper">
+    <!-- Wrap the .navBar in .container to center it within the absolutely positioned parent. -->
+    <nav id="nav" role="navigation">
+        <div class="container">
+            <a href="#nav" title="Show navigation">Menu</a>
+            <a href="#" title="Hide navigation">Hide Menu</a>
+            <ul id="menu">
+                <li class="nav-btn"><a href="/" aria-haspopup="true"> Home <span class="arrow-down"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="/#bulletins">Bulletins</a></li>
+                        <li><a href="/#dates">Important Dates</a></li>
+                        <li><a href="/#speakers">Keynote Speakers</a></li>
+                        <li><a href="/#venue">Venue</a></li>
+                        <li><a href="/#committees">Committees</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-btn"><a href="https://indico.ugent.be/event/0/timetable/#20160222" target="_blank">Timetable</a>
+                </li>
+                <li class="nav-btn"><a href="/infos" aria-haspopup="true"> Practical Information <span
+                        class="arrow-down"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="/infos#travel">Travel</a></li>
+				  <li><a href="/infos#visa">Visa</a></li>
+                        <li><a href="/infos#accommodation">Accommodation</a></li>
+                        <li><a href="/infos#lunch">Lunch</a></li>
+                        <li><a href="/infos#visit">Visiting nearby places</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-btn"><a href="/events">Social Events</a></li>
+                <li class="nav-btn"><a href="https://indico.ugent.be/event/0/registration/"
+                                       target="_blank">Registration</a></li>
+                <li class="nav-btn"><a href="https://indico.ugent.be/event/0/call-for-abstracts/" target="_blank">Abstract
+                    Submission</a></li>
+                <!--<li class="nav-btn"><a href="http://helpdesk.ugent.be/webhosting/congres.php">Registration</a></li>-->
+			<li class="nav-btn"><a href="/proceedings">Proceedings</a></li>
+			<li class="nav-btn"><a href="/sponsors">Sponsors</a></li>
+                <li class="nav-btn"><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--<span style="color: red; "><h1>Site under Construction</h1></span>-->
+
+<script src="static/doubletaptogo.js"></script>
+<script>
+    $( function()
+    {
+        $( 'nav li:has(ul)' ).doubleTapToGo();
+    });
+</script>

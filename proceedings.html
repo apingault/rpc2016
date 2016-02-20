@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="static/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedBase").load("base.html");
+            $("#includedFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <div id="includedBase"></div>
+    <section id="content">
+        <div class="container">
+            <section id="proceedings"> <h1 class="title"> Proceedings </h1>
+                
+                <p> The proceedings of this workshop will be published in the peer-reviewed <a href="http://iopscience.iop.org/1748-0221/">Journal of Instrumentation</a>. More details will be given during the workshop.
+
+                <p> E-mail: <a href="mailto:rpc2016@ugent.be">rpc2016@ugent.be</a></br>
+                </p>
+            </section>
+        </div>
+    </section>
+    <div id="includedFooter"></div>
+</div>
+</body>
+</html>

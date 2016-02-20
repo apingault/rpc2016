@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="static/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedBase").load("base.html");
+            $("#includedFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <div id="includedBase"></div>
+    <section id="content">
+        <div class="container">
+            <section id="contact"> <h1 class="title"> Contact </h1>
+                <h2> Department  of Physics and Astronomy - Universiteit Gent</h2>
+                <p> Proeftuinstraat 86, B-9000 Gent </br>
+                    +32 9 264.65.28 </p>
+
+                <h2> Conference Center </h2>
+                <p> Het Pand </br>
+                    Onderbergen 1 </br>
+                    Phone +32 (0)9 264 82 62</br>
+                    Fax  +32 (0)9 264 83 93</br>
+                </p>
+
+                <h2>LOC</h2>
+                <p> E-mail: <a href="mailto:rpc2016@ugent.be">rpc2016@ugent.be</a></br>
+                </p>
+            </section>
+        </div>
+    </section>
+    <div id="includedFooter"></div>
+</div>
+</body>
+</html>

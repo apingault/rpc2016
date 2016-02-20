@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="static/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedBase").load("base.html");
+            $("#includedFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <div id="includedBase"></div>
+    <div class="container">
+        <div id="intro">
+            <h3> A welcome reception, social dinner and a one afternoon excursion are planned and included in the
+                conference fee.</h3>
+        </div>
+        <section id="pub-crawl"><h1 class="title"> Pub Crawl </h1>
+
+            <p> Participants arriving in Ghent on Sunday the 21st can join us in a leisurely walk in the city centre starting at 7pm. We will introduce you to the local pubs and their beverages.
+                <em>Please note that this walk is not part of the official conference program and expenses are not included in the registration fee.</em>
+            </p>
+        </section>
+        <section id="cocktail"><h1 class="title"> Welcome Reception</h1>
+
+            <p>A welcome reception will be held in the Ghent Opera House on Monday evening the 22nd starting at 6pm.</p>
+            <!--TODO - Add OperaHouse photo/information-->
+        </section>
+
+        <section id="activities"><h1 class="title"> Excursion </h1>
+            Wednesday afternoon will be free for social activities; two group activities are scheduled and included in the conferences fees:<br>
+            <ul>
+                <li> <strong>- Excursion 1:  Historical walk with beer tasting</strong> </li>
+                    <p>
+                        A local guide will take you on a (walking) tour of Ghent's beautiful center, visiting some of the important historical landmarks of the medieval city. The walk will end with a visit to the city brewery and a tasting of the 3 "Gruut"ù beer variants.
+                    </p>
+
+                    <p>
+                        Duration of the walk & beer tasting: ~3h
+                    </p>
+                <li> <strong> - Excursion 2:   Historical walk with library visit and aperitif</strong> </li>
+                    <p>
+                        A local guide will take you on a (walking) tour of Ghent's beautiful center, visiting some of the important historical landmarks of the medieval city including a visit to the magnificent library of the Augustijnen monastery. The walk will end in "Het Vleeshuis"ù with an aperitif.
+                    </p>
+
+                    <p>
+                        Duration of the walk & aperitif: ~3h
+                    </p>
+                The guided tours start at 14h, meeting place to be determined.
+            </ul>
+        </section>
+
+        <section id="cocktail"><h1 class="title"> Social Dinner </h1>
+
+            <p>On Thursday the 25th, the last evening of the workshop, a social dinner will take place at the <a href="http://monasterium.be/index.php?taal=eng">Monasterium PoortAckere</a> starting at 7:30pm.</p>
+        </section>
+    </div>
+
+    <div id="includedFooter"></div>
+</div>
+</body>
+</html>
