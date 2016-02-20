@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="static/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedBase").load("base.html");
+            $("#includedFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <div id="includedBase"></div>
+    <section id="content">
+
+        <div class="container">
+
+            <section id="instruction"> <h1> Instructions for the Poster Session </h1>
+
+                <p class="to-be-announced" style="color: red">More Information will soon be available</p>
+
+                <h2>Location</h2>
+                <!--<p>Posters will be placed in front of the Touschek hall in the High Energy Building.</p>-->
+
+                <h2>Format and installation</h2>
+                <p>The recommended format is A0 (84x119 cm, 33.1x46.8 in). The necessary tools (tape, cutters, etc.) and help for installation will be provided by the local organization.</p>
+
+                <h2>Poster session</h2>
+                <p>Posters should be installed on Monday morning so that they will be visible during the entire conference. The title and ID of your contribution will be indicated on top of each panel.</p>
+                <!--<p>The poster session is scheduled for Tuesday at 18:30. Presenters are invited to stand beside the poster to illustrate the content to interested participants.</p>-->
+
+                <h2>Electronic version</h2>
+                <p>The file of the poster should be also uploaded on the conference INDICO page before the end of the conference.</p>
+            </section>
+
+        </div>
+
+    </section>
+    <div id="includedFooter"></div>
+</div>
+</body>
+</html>

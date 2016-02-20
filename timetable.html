@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="static/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedBase").load("base.html");
+            $("#includedFooter").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <div id="includedBase"></div>
+    <section id="content">
+        <div class="container">
+            <section> <h1 class="title">    Link to Indico    </h1>
+            </section>
+        </div>
+    </section>
+    <div id="includedFooter"></div>
+</div>
+</body>
+</html>
